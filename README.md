@@ -30,6 +30,7 @@ Diferente do vanilla, onde baús são limitados a 18 slots, o Advanced Storage p
 | 3 | Gold / Silver Chest | Gold / Silver Ingot | 63 (7x9) | 3 | Nível 2 |
 | 4 | Cobalt / Mithril Chest | Cobalt / Mithril Ingot | 81 (9x9) | 4 | Nível 3 |
 | 5 | Onyxium / Adamantite | Onyxium / Adamantite Ingot | 108 (12x9) | 5 | Nível 4 |
+| 6 | Thorium | Thorium Ingot | 144 (16x9) | 6 | Nível 4 |
 
 ---
 
@@ -43,6 +44,7 @@ O gerenciamento de espaço é otimizado através de Stack Upgrades. Eles não au
 | Tier 2 (Advanced) | x4 | 100 | 400 |
 | Tier 3 (Elite) | x8 | 200 | 800 |
 | Tier 4 (Ultimate) | x16 | 400 | 1600 |
+| Tier 5 (Supreme) | x64 | 1600 | 6400 |
 
 ---
 
