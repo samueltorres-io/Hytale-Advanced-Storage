@@ -1,0 +1,14 @@
+{
+    "id": "advanced_storage:chest_bronze",
+    "baseBlock": "hytale:chest_wood",
+    "model": "advanced_storage:village_chest",
+    "textureOverrides": {
+        "chest_texture": "advanced_storage:blocks/chest_bronze"
+    },
+    "components": {
+        "hytale:container": {
+            "slot": 27,
+            "ui": "advanced_storage:chest_interface"
+        }
+    }
+}

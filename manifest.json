@@ -6,15 +6,10 @@
   "Authors": [
     {
       "Name": "Samuel Torres",
-      "Email": "https://github.com/samueltorres-io",
       "Url": "https://github.com/samueltorres-io"
     }
   ],
   "Website": "https://github.com/samueltorres-io/Hytale-Advanced-Storage",
-  "EntryPoints": {
-    "Client": "scripts/Common/index.js",
-    "Server": "scripts/server/index.js"
-  },
   "Dependencies": {},
   "OptionalDependencies": {},
   "LoadBefore": {},
