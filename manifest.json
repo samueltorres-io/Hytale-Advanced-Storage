@@ -1,0 +1,24 @@
+{
+  "Group": "samueltorres-io",
+  "Name": "Hytale Advanced Storage",
+  "Version": "0.0.1",
+  "Description": "A sophisticated modular storage system for Hytale. Features tiered chests and stack upgrades to optimize inventory management.",
+  "Authors": [
+    {
+      "Name": "Samuel Torres",
+      "Email": "https://github.com/samueltorres-io",
+      "Url": "https://github.com/samueltorres-io"
+    }
+  ],
+  "Website": "https://github.com/samueltorres-io/Hytale-Advanced-Storage",
+  "EntryPoints": {
+    "Client": "scripts/Common/index.js",
+    "Server": "scripts/server/index.js"
+  },
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}
