@@ -8,7 +8,7 @@ O Advanced Storage é um mod focado em elevar o patamar de organização e logí
 
 ## Funcionalidades Principais
 
-**Progressão por Tiers:** Evolua seus baús desde madeira básica até metais lendários como Onyxium.
+**Progressão por Tiers:** Evolua seus baús desde madeira básica até metais lendários como Thorium.
 
 **Sistema de Upgrades In-Place:** Utilize o *Evolved Core* para realizar upgrades visuais e funcionais em tempo real.
 
@@ -22,15 +22,30 @@ O Advanced Storage é um mod focado em elevar o patamar de organização e logí
 
 Diferente do vanilla, onde baús são limitados a 18 slots, o Advanced Storage permite uma expansão massiva:
 
-| Tier | Nome | Material Base | Slots | Slots Upgrade | Requisito Workcench |
-| ---- | ---- | ------------- | ----- | ---------------- | ------------------- |
-| 0 | Vanilla Chest | Wood | 18 | 0 | Nível 1 |
-| 1 | Cooper / Bronze Chest | Cooper / Bronze Ingot | 27 (3X9) | 1 | Nível 1 |
-| 2 | Iron Chest | Iron Ingot | 45 (5x9) | 2 | Nível 2 |
-| 3 | Gold / Silver Chest | Gold / Silver Ingot | 63 (7x9) | 3 | Nível 2 |
-| 4 | Cobalt / Mithril Chest | Cobalt / Mithril Ingot | 81 (9x9) | 4 | Nível 3 |
-| 5 | Onyxium / Adamantite | Onyxium / Adamantite Ingot | 108 (12x9) | 5 | Nível 4 |
-| 6 | Thorium | Thorium Ingot | 144 (16x9) | 6 | Nível 4 |
+| Tier | Nome | Material Base | Slots | Slots Upgrade | Requisito Workcench | Receita de Upgrade (Template +) |
+| ---- | ---- | ------------- | ----- | ---------------- | ------------------- | ---------------------------- |
+| 0 | Vanilla Chest | Wood | 18 (2x9) | 0 | Nível 1 | --- |
+| 1 | Cooper Chest | Cooper Ingot | 27 (3X9) | 1 | Nível 1 | Template + 4 Cooper Ingot |
+| 2 | Iron Chest | Iron Ingot | 45 (5x9) | 2 | Nível 2 | Template + 4 Iron Ingot |
+| 3 | Silver Chest | Silver Ingot | 68 (7x9) | 3 | Nível 2 | Template + 4 Silver Ingot |
+| 4 | Gold Chest | Gold Ingot | 72 (8x9) | 3 | Nível 2 | Template + 4 Gold Ingot |
+| 5 | Cobalt Chest | Cobalt Ingot | 81 (9x9) | 4 | Nível 3 | Template + 4 Cobalt Ingot |
+| 6 | Thorium Chest | Thorium Ingot | 90 (10x9) | 4 | Nível 3 | Template + 4 Thorium Ingot |
+| 7 | Adamantite Chest | Adamantite Ingot | 108 (12x9) | 5 | Nível 3 | Template + 4 Adamantite Ingot |
+| 8 | Mithril Chest | Mithril Ingot | 135 (15x9) | 7 | Nível 4 | Template + 4 Mithril Ingot |
+| 9 | Onyxium Chest | Onyxium Ingot | 162 (18x9) | 9 | Nível 4 | Template + 4 Onyxium Ingot |
+
+---
+
+## Sistema de Tier Upgrades (Upgrade Tier de Chest)
+
+O jogador precisa de um *Template de Upgrade* (um item base) que, ao ser combinado com o metal do próximo Tier, se transforma no item que realiza o upgrade no baú.
+
+Este é o item que o jogador crafta na Workbench para iniciar qualquer processo de evolução de Tier.
+
+- **Craft:** 2 Iron Ingots + 1 Paper/Scroll.
+
+- **Função:** Serve como base para todos os upgrades de Tier.
 
 ---
 
