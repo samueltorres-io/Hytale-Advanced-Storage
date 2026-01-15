@@ -7,6 +7,8 @@
     "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.bbmodel",
     "Tags": {
       "StorageUpgrade": "Tier_Upgrade_Template_Cooper",
-      "Material": "Copper"
+      "Material": "Copper",
+      "UpgradeToTier": "1",
+      "RequiredBaseBlock": "hytale:wood_chest"
     }
 }
