@@ -32,7 +32,7 @@
     "ParticleColor": "#63412c",
     "State": {
       "Id": "container",
-      "Capacity": 63,
+      "Capacity": 135,
       "Definitions": {
         "CloseWindow": {
           "InteractionSoundEventId": "SFX_Chest_Wooden_Close",
