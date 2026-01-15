@@ -1,0 +1,12 @@
+{
+    "TranslationProperties": {
+      "Name": "Tier Upgrade Template Base",
+      "Description": "Essential component for forging storage upgrades"
+    },
+    "Icon": "Icons/TierUpgrade/Tier_Upgrade_Template_Base.png",
+    "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.bbmodel",
+    "Tags": {
+      "StorageUpgrade": "Tier_Upgrade_Template_Base",
+      "Material": "Iron"
+    }
+}

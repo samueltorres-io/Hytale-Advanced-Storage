@@ -1,0 +1,12 @@
+{
+  "TranslationProperties": {
+    "Name": "Tier Upgrade Template Adamantite",
+    "Description": "Upgrades an Thorium Chest to Adamantite. Increases storage space to 108 slots and unlocks 5 upgrade slots"
+    },
+    "Icon": "Icons/TierUpgrade/Tier_Upgrade_Template_Adamantite.png",
+    "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.bbmodel",
+    "Tags": {
+      "StorageUpgrade": "Tier_Upgrade_Template_Adamantite",
+      "Material": "Adamantite"
+    }
+  }
