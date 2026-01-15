@@ -1,0 +1,13 @@
+{
+    "TranslationProperties": {
+      "Name": "Stack Upgrade (Base)",
+      "Description": "Doubles the slot capacity"
+    },
+    "Icon": "Icons/Upgrade/Upgrade_Stack_T1.png",
+    "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
+    "Tags": {
+      "UpgradeType": "Stack",
+      "StackMultiplier": 2,
+      "UpgradeTier": 1
+    }
+}
