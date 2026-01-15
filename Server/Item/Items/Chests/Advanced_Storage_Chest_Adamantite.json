@@ -1,20 +1,20 @@
 {
   "TranslationProperties": {
-    "Name": "items.Advanced_Storage_Chest_Bronze.name",
-    "Description": "items.Advanced_Storage_Chest_Bronze.description"
+    "Name": "items.Advanced_Storage_Chest_Adamantite.name",
+    "Description": "items.Advanced_Storage_Chest_Adamantite.description"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
     "Furniture.Containers"
   ],
-  "Icon": "Icons/Chest/Chest_Bronze.png",
+  "Icon": "Icons/Chest/Chest_Adamantite.png",
   "BlockType": {
     "BlockParticleSetId": "Wood",
     "BlockSoundSetId": "Wood",
     "CustomModel": "Blocks/Chest/Chest.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Chest/Chest_Bronze_Texture.png",
+        "Texture": "Blocks/Chest/Chest_Adamantite_Texture.png",
         "Weight": 1
       }
     ],
@@ -32,7 +32,7 @@
     "ParticleColor": "#63412c",
     "State": {
       "Id": "container",
-      "Capacity": 27,
+      "Capacity": 54,
       "Definitions": {
         "CloseWindow": {
           "InteractionSoundEventId": "SFX_Chest_Wooden_Close",

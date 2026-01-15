@@ -1,20 +1,20 @@
 {
   "TranslationProperties": {
-    "Name": "items.Advanced_Storage_Chest_Bronze.name",
-    "Description": "items.Advanced_Storage_Chest_Bronze.description"
+    "Name": "items.Advanced_Storage_Chest_Copper.name",
+    "Description": "items.Advanced_Storage_Chest_Copper.description"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
     "Furniture.Containers"
   ],
-  "Icon": "Icons/Chest/Chest_Bronze.png",
+  "Icon": "Icons/Chest/Chest_Copper.png",
   "BlockType": {
     "BlockParticleSetId": "Wood",
     "BlockSoundSetId": "Wood",
     "CustomModel": "Blocks/Chest/Chest.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Chest/Chest_Bronze_Texture.png",
+        "Texture": "Blocks/Chest/Chest_Copper_Texture.png",
         "Weight": 1
       }
     ],
