@@ -73,12 +73,9 @@
     }
   ],
   "Tags": {
-    "Type": [
-      "Furniture"
-    ],
-    "Family": [
-      "Crude"
-    ]
+    "StorageTier": "1",
+    "IsAdvancedStorage": "true",
+    "UpdateSlots": "1"
   },
   "IconProperties": {
     "Scale": 0.55,
