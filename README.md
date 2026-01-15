@@ -10,8 +10,6 @@ O Advanced Storage é um mod focado em elevar o patamar de organização e logí
 
 **Progressão por Tiers:** Evolua seus baús desde madeira básica até metais lendários como Thorium.
 
-**Sistema de Upgrades In-Place:** Utilize o *Evolved Core* para realizar upgrades visuais e funcionais em tempo real.
-
 **Modularidade:** Adicione funcionalidades (como expansão de stack) através de slots de upgrade dedicados.
 
 **Balanceamento Nativo:** Totalmente integrado aos materiais e níveis de workbench do Hytale.
@@ -25,15 +23,15 @@ Diferente do vanilla, onde baús são limitados a 18 slots, o Advanced Storage p
 | Tier | Nome | Material Base | Slots | Slots Upgrade | Requisito Workcench | Receita de Upgrade (Template +) |
 | ---- | ---- | ------------- | ----- | ---------------- | ------------------- | ---------------------------- |
 | 0 | Vanilla Chest | Wood | 18 (2x9) | 0 | Nível 1 | --- |
-| 1 | Cooper Chest | Cooper Ingot | 27 (3X9) | 1 | Nível 1 | Template + 4 Cooper Ingot |
-| 2 | Iron Chest | Iron Ingot | 45 (5x9) | 2 | Nível 2 | Last Template + 4 Iron Ingot |
-| 3 | Silver Chest | Silver Ingot | 63 (7x9) | 3 | Nível 2 | Last Template + 4 Silver Ingot |
-| 4 | Gold Chest | Gold Ingot | 72 (8x9) | 3 | Nível 2 | Last Template + 4 Gold Ingot |
-| 5 | Cobalt Chest | Cobalt Ingot | 81 (9x9) | 4 | Nível 3 | Last Template + 4 Cobalt Ingot |
-| 6 | Thorium Chest | Thorium Ingot | 90 (10x9) | 4 | Nível 3 | Last Template + 4 Thorium Ingot |
-| 7 | Adamantite Chest | Adamantite Ingot | 108 (12x9) | 5 | Nível 3 | Last Template + 4 Adamantite Ingot |
-| 8 | Mithril Chest | Mithril Ingot | 135 (15x9) | 6 | Nível 4 | Last Template + 4 Mithril Ingot |
-| 9 | Onyxium Chest | Onyxium Ingot | 162 (18x9) | 7 | Nível 4 | Last Template + 4 Onyxium Ingot |
+| 1 | Cooper Chest | Cooper Ingot | 27 (3X9) | 1 | Nível 1 | Template + 8 Cooper Ingot |
+| 2 | Iron Chest | Iron Ingot | 45 (5x9) | 2 | Nível 2 | Last Template + 8 Iron Ingot |
+| 3 | Silver Chest | Silver Ingot | 63 (7x9) | 3 | Nível 2 | Last Template + 8 Silver Ingot |
+| 4 | Gold Chest | Gold Ingot | 72 (8x9) | 3 | Nível 2 | Last Template + 8 Gold Ingot |
+| 5 | Cobalt Chest | Cobalt Ingot | 81 (9x9) | 4 | Nível 3 | Last Template + 8 Cobalt Ingot |
+| 6 | Thorium Chest | Thorium Ingot | 90 (10x9) | 4 | Nível 3 | Last Template + 8 Thorium Ingot |
+| 7 | Adamantite Chest | Adamantite Ingot | 108 (12x9) | 5 | Nível 3 | Last Template + 8 Adamantite Ingot |
+| 8 | Mithril Chest | Mithril Ingot | 135 (15x9) | 6 | Nível 4 | Last Template + 8 Mithril Ingot |
+| 9 | Onyxium Chest | Onyxium Ingot | 162 (18x9) | 7 | Nível 4 | Last Template + 8 Onyxium Ingot |
 
 ---
 
@@ -75,14 +73,6 @@ O gerenciamento de espaço é otimizado através de Stack Upgrades. Eles não au
 ---
 
 ## Mecânicas de Crafting & Economia
-
-### O "Evolved Core" (O Ativador)
-
-Para evoluir um baú, o jogador não utiliza a bancada de craft diretamente no bloco, mas sim uma ferramenta de transmutação.
-
-- **Receita:** 4 Iron Ingots + 1 Fiber + 1 Wood Chest.
-
-- **Mecânica:** Clique com o botão direito em um baú colocado no mundo para ativar a evolução visual e funcional.
 
 ### Upgrades Laterais
 
