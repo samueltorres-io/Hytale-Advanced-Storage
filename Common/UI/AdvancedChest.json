@@ -1,0 +1,48 @@
+{
+    "Window": {
+      "Id": "AdvancedStorageWindow",
+      "Size": [400, 500],
+      "Center": true,
+      "Components": [
+        {
+          "Type": "Header",
+          "Text": "{Block.Name}"
+        },
+        {
+          "Type": "ScrollContainer",
+          "Id": "InventoryScroll",
+          "Position": [10, 50],
+          "Size": [300, 400],
+          "Content": {
+            "Type": "ItemGrid",
+            "Id": "MainGrid",
+            "Source": "Block.Inventory",
+            "Columns": 9,
+            "SlotSpacing": 2
+          }
+        },
+        {
+          "Type": "Panel",
+          "Id": "UpgradeSidebar",
+          "Position": [320, 50],
+          "Size": [60, 400],
+          "Background": "ui_panel_dark",
+          "Components": [
+            {
+              "Type": "Label",
+              "Text": "Upgrades",
+              "FontSize": 12,
+              "Dock": "Top"
+            },
+            {
+              "Type": "ItemGrid",
+              "Id": "UpgradeSlots",
+              "Source": "Block.UpgradeInventory",
+              "Columns": 1,
+              "MaxSlots": "{Block.Tags.UpgradeSlots}" 
+            }
+          ]
+        }
+      ]
+    }
+  }
