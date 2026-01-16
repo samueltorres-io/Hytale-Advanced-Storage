@@ -75,7 +75,7 @@
   "Tags": {
     "StorageTier": "4",
     "IsAdvancedStorage": "true",
-    "UpdateSlots": "3"
+    "UpgradeSlots": "3"
   },
   "IconProperties": {
     "Scale": 0.55,
