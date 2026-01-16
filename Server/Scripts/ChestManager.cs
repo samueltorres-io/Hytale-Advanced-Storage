@@ -79,15 +79,15 @@ namespace AdvancedStorage.Server.Scripts
         {
             switch (tier)
             {
-                case "1": return "advancedstorage:chest_copper";
-                case "2": return "advancedstorage:chest_iron";
-                case "3": return "advancedstorage:chest_silver";
-                case "4": return "advancedstorage:chest_gold";
-                case "5": return "advancedstorage:chest_cobalt";
-                case "6": return "advancedstorage:chest_thorium";
-                case "7": return "advancedstorage:chest_adamantite";
-                case "8": return "advancedstorage:chest_mithril";
-                case "9": return "advancedstorage:chest_onyxium";
+                case "1": return "advancedstorage:advanced_storage_chest_copper";
+                case "2": return "advancedstorage:advanced_storage_chest_iron";
+                case "3": return "advancedstorage:advanced_storage_chest_silver";
+                case "4": return "advancedstorage:advanced_storage_chest_gold";
+                case "5": return "advancedstorage:advanced_storage_chest_cobalt";
+                case "6": return "advancedstorage:advanced_storage_chest_thorium";
+                case "7": return "advancedstorage:advanced_storage_chest_adamantite";
+                case "8": return "advancedstorage:advanced_storage_chest_mithril";
+                case "9": return "advancedstorage:advanced_storage_chest_onyxium";
                 default: return "hytale:wood_chest";
             }
         }
