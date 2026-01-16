@@ -8,6 +8,7 @@
     "Tags": {
       "StorageUpgrade": "Tier_Upgrade_Template_Adamantite",
       "Material": "Adamantite",
-      "UpgradeToTier": "7"
+      "UpgradeToTier": "7",
+      "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_thorium"
     }
   }

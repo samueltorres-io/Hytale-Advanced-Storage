@@ -8,6 +8,7 @@
   "Tags": {
     "StorageUpgrade": "Tier_Upgrade_Template_Iron",
     "Material": "Iron",
-    "UpgradeToTier": "2"
+    "UpgradeToTier": "2",
+    "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_copper"
   }
 }

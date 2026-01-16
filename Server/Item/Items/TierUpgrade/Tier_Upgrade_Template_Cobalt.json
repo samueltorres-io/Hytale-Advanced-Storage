@@ -8,6 +8,7 @@
     "Tags": {
       "StorageUpgrade": "Tier_Upgrade_Template_Cobalt",
       "Material": "Cobalt",
-      "UpgradeToTier": "5"
+      "UpgradeToTier": "5",
+      "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_gold"
     }
   }

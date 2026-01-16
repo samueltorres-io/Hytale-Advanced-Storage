@@ -8,6 +8,7 @@
     "Tags": {
       "StorageUpgrade": "Tier_Upgrade_Template_Thorium",
       "Material": "Thorium",
-      "UpgradeToTier": "6"
+      "UpgradeToTier": "6",
+      "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_cobalt"
     }
   }

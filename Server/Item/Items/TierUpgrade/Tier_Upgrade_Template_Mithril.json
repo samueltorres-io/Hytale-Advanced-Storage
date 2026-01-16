@@ -8,6 +8,7 @@
     "Tags": {
       "StorageUpgrade": "Tier_Upgrade_Template_Mithril",
       "Material": "Mithril",
-      "UpgradeToTier": "8"
+      "UpgradeToTier": "8",
+      "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_adamantite"
     }
   }

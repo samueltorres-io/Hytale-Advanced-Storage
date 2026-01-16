@@ -8,6 +8,7 @@
     "Tags": {
       "StorageUpgrade": "Tier_Upgrade_Template_Gold",
       "Material": "Gold",
-      "UpgradeToTier": "4"
+      "UpgradeToTier": "4",
+      "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_silver"
     }
   }
