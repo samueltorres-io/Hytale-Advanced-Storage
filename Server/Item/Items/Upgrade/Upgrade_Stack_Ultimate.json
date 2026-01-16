@@ -1,0 +1,13 @@
+{
+    "TranslationProperties": {
+      "Name": "Stack Upgrade (Ultimate)",
+      "Description": "Multiplies slot capacity by 16x"
+    },
+    "Icon": "Icons/Upgrade/Upgrade_Stack_T4.png",
+    "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
+    "Tags": {
+      "UpgradeType": "Stack",
+      "StackMultiplier": 16,
+      "UpgradeTier": 4
+    }
+}

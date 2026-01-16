@@ -1,0 +1,13 @@
+{
+    "TranslationProperties": {
+      "Name": "Stack Upgrade (Elite)",
+      "Description": "Multiplies slot capacity by 8x"
+    },
+    "Icon": "Icons/Upgrade/Upgrade_Stack_T3.png",
+    "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
+    "Tags": {
+      "UpgradeType": "Stack",
+      "StackMultiplier": 8,
+      "UpgradeTier": 3
+    }
+}

@@ -32,7 +32,7 @@
     "ParticleColor": "#63412c",
     "State": {
       "Id": "container",
-      "Capacity": 49,
+      "Capacity": 81,
       "Definitions": {
         "CloseWindow": {
           "InteractionSoundEventId": "SFX_Chest_Wooden_Close",
@@ -73,12 +73,9 @@
     }
   ],
   "Tags": {
-    "Type": [
-      "Furniture"
-    ],
-    "Family": [
-      "Crude"
-    ]
+    "StorageTier": "5",
+    "IsAdvancedStorage": "true",
+    "UpdateSlots": "4"
   },
   "IconProperties": {
     "Scale": 0.55,

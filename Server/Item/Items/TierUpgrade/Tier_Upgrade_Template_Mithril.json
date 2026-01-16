@@ -1,0 +1,14 @@
+{
+  "TranslationProperties": {
+    "Name": "Tier Upgrade Template Mithril",
+    "Description": "Upgrades an Adamantite Chest to Mithril. Increases storage space to 135 slots and unlocks 6 upgrade slots"
+    },
+    "Icon": "Icons/TierUpgrade/Tier_Upgrade_Template_Mithril.png",
+    "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.bbmodel",
+    "Tags": {
+      "StorageUpgrade": "Tier_Upgrade_Template_Mithril",
+      "Material": "Mithril",
+      "UpgradeToTier": "8",
+      "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_adamantite"
+    }
+  }

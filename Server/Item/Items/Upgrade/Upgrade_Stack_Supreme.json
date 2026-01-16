@@ -1,0 +1,13 @@
+{
+    "TranslationProperties": {
+      "Name": "Stack Upgrade (Supreme)",
+      "Description": "Multiplies slot capacity by 64x"
+    },
+    "Icon": "Icons/Upgrade/Upgrade_Stack_T5.png",
+    "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
+    "Tags": {
+      "UpgradeType": "Stack",
+      "StackMultiplier": 64,
+      "UpgradeTier": 5
+    }
+}
