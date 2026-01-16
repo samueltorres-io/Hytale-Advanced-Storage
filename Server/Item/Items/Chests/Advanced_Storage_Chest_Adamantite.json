@@ -31,17 +31,17 @@
     "Opacity": "Transparent",
     "ParticleColor": "#63412c",
     "State": {
-      "Id": "container",
+      "Id": "advanced_container",
       "Capacity": 108,
-      "Definitions": {
-        "CloseWindow": {
-          "InteractionSoundEventId": "SFX_Chest_Wooden_Close",
-          "CustomModelAnimation": "Blocks/Animations/Chest/Chest_Close.blockyanim"
-        },
-        "OpenWindow": {
-          "InteractionSoundEventId": "SFX_Chest_Wooden_Open",
-          "CustomModelAnimation": "Blocks/Animations/Chest/Chest_Open.blockyanim"
+      "SecondaryContainers": [
+        {
+          "Id": "UpgradeInventory",
+          "Capacity": 5
         }
+      ],
+      "Definitions": {
+        "CloseWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Close" },
+        "OpenWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Open" }
       }
     },
     "Supporting": {
