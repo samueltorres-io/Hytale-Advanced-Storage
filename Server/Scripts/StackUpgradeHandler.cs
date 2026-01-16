@@ -3,6 +3,24 @@ using Hytale.API.Blocks;
 using Hytale.API.Inventory;
 using System.Linq;
 
+/**
+ * Pontos cruciais da implementação:
+ * 
+ * - Hook IInventoryChangedHandler:
+ * Ele garante que o multiplicador seja recalculado instantaneamente
+ * no momento em que o jogador coloca ou retira um upgrade da sidebar.
+ *
+ * - SetCustomMaxStackMultiplier:
+ * Esta é uma função hipotética da API (dependendo da versão final da
+ * SDK do Hytale) que permite que um container específico ignore o DefaultStack.
+ * Se a API for mais rígida, a alternativa é interceptar o evento OnItemAdded
+ * e validar manualmente se a quantidade excede BaseStack * Multiplier.
+ *
+ * Respeito à Base:
+ * O código lê o multiplicador (ex: 64) e o sistema do Hytale multiplica pelo
+ * valor base do item (Gema 25 ou Ingot 100), resultando nos 1600 ou 6400.
+*/
+
 namespace AdvancedStorage.Server.Scripts
 {
     /**
