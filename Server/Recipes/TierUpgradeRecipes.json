@@ -1,0 +1,87 @@
+[
+    {
+      "Id": "recipe_tier_upgrade_base",
+      "Output": "advancedstorage:tier_upgrade_template_base",
+      "RequiredWorkbenchLevel": 1,
+      "Ingredients": [
+        { "Id": "hytale:iron_ingot", "Count": 4 },
+        { "Id": "hytale:paper", "Count": 1 }
+      ]
+    },
+    {
+      "Id": "recipe_tier_upgrade_copper",
+      "Output": "advancedstorage:tier_upgrade_template_copper",
+      "RequiredWorkbenchLevel": 1,
+      "Ingredients": [
+        { "Id": "advancedstorage:tier_upgrade_template_base", "Count": 1 },
+        { "Id": "hytale:copper_ingot", "Count": 8 }
+      ]
+    },
+    {
+      "Id": "recipe_tier_upgrade_iron",
+      "Output": "advancedstorage:tier_upgrade_template_iron",
+      "RequiredWorkbenchLevel": 2,
+      "Ingredients": [
+        { "Id": "advancedstorage:tier_upgrade_template_copper", "Count": 1 },
+        { "Id": "hytale:iron_ingot", "Count": 8 }
+      ]
+    },
+    {
+      "Id": "recipe_tier_upgrade_silver",
+      "Output": "advancedstorage:tier_upgrade_template_silver",
+      "RequiredWorkbenchLevel": 2,
+      "Ingredients": [
+        { "Id": "advancedstorage:tier_upgrade_template_iron", "Count": 1 },
+        { "Id": "hytale:silver_ingot", "Count": 8 }
+      ]
+    },
+    {
+      "Id": "recipe_tier_upgrade_gold",
+      "Output": "advancedstorage:tier_upgrade_template_gold",
+      "RequiredWorkbenchLevel": 2,
+      "Ingredients": [
+        { "Id": "advancedstorage:tier_upgrade_template_silver", "Count": 1 },
+        { "Id": "hytale:gold_ingot", "Count": 8 }
+      ]
+    },{
+      "Id": "recipe_tier_upgrade_cobalt",
+      "Output": "advancedstorage:tier_upgrade_template_cobalt",
+      "RequiredWorkbenchLevel": 3,
+      "Ingredients": [
+        { "Id": "advancedstorage:tier_upgrade_template_gold", "Count": 1 },
+        { "Id": "hytale:cobalt_ingot", "Count": 8 }
+      ]
+    },{
+      "Id": "recipe_tier_upgrade_thorium",
+      "Output": "advancedstorage:tier_upgrade_template_thorium",
+      "RequiredWorkbenchLevel": 3,
+      "Ingredients": [
+        { "Id": "advancedstorage:tier_upgrade_template_cobalt", "Count": 1 },
+        { "Id": "hytale:thorium_ingot", "Count": 8 }
+      ]
+    },{
+      "Id": "recipe_tier_upgrade_adamantite",
+      "Output": "advancedstorage:tier_upgrade_template_adamantite",
+      "RequiredWorkbenchLevel": 3,
+      "Ingredients": [
+        { "Id": "advancedstorage:tier_upgrade_template_thorium", "Count": 1 },
+        { "Id": "hytale:adamantite_ingot", "Count": 8 }
+      ]
+    },{
+      "Id": "recipe_tier_upgrade_mithril",
+      "Output": "advancedstorage:tier_upgrade_template_mithril",
+      "RequiredWorkbenchLevel": 4,
+      "Ingredients": [
+        { "Id": "advancedstorage:tier_upgrade_template_adamantite", "Count": 1 },
+        { "Id": "hytale:mithril_ingot", "Count": 8 }
+      ]
+    },{
+      "Id": "recipe_tier_upgrade_onyxium",
+      "Output": "advancedstorage:tier_upgrade_template_onyxium",
+      "RequiredWorkbenchLevel": 4,
+      "Ingredients": [
+        { "Id": "advancedstorage:tier_upgrade_template_mithril", "Count": 1 },
+        { "Id": "hytale:onyxium_ingot", "Count": 8 }
+      ]
+    }
+]
