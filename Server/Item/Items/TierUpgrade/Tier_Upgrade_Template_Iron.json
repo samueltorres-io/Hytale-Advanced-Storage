@@ -5,6 +5,7 @@
   },
   "Icon": "Icons/Items/TierUpgrade/Tier_Upgrade_Template_Iron.png",
   "Model": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template.blockymodel",
+  "Categories": ["Items.Tiers_Upgrades"],
   "CustomModelTexture": [
       {
         "Texture": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Iron_Texture"
