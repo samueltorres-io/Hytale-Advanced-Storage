@@ -3,12 +3,12 @@
     "Name": "Tier Upgrade Template Onyxium",
     "Description": "Upgrades an Mithril Chest to Onyxium. Increases storage space to 162 slots and unlocks 7 upgrade slots"
     },
-    "Icon": "Icons/Items/TierUpgrade/Tier_Upgrade_Template_Onyxium.png",
-    "Model": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template.blockymodel",
+    "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Onyxium",
+    "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
     "Categories": ["Items.Tiers_Upgrades"],
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Onyxium_Texture"
+        "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Onyxium_Texture"
       }
     ],
     "Tags": {
