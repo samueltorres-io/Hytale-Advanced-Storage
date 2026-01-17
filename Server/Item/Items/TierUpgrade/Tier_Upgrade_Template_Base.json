@@ -4,7 +4,7 @@
       "Description": "Essential component for forging storage upgrades"
     },
     "Icon": "Icons/Items/TierUpgrade/Tier_Upgrade_Template.png",
-    "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.blockymodel",
+    "Model": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template.blockymodel",
     "CustomModelTexture": [
       {
         "Texture": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Texture"
