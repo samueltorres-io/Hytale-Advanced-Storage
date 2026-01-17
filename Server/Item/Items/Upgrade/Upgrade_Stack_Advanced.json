@@ -3,11 +3,11 @@
       "Name": "Stack Upgrade (Advanced)",
       "Description": "Multiplies slot capacity by 4x and consumes 2 Energy Points"
     },
-    "Icon": "Icons/Upgrade/Upgrade_Stack_T2.png",
+    "Icon": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Advanced",
     "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Upgrade/Upgrade_Stack_Advanced_Texture.png"
+        "Texture": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Advanced_Texture"
       }
     ],
     "Tags": {
