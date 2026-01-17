@@ -3,8 +3,8 @@
       "Name": "Stack Upgrade (Base)",
       "Description": "Doubles the slot capacity"
     },
-    "Icon": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Base",
-    "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
+    "Icon": "advancedstorage:Icons/Upgrade/Upgrade_Stack_Base",
+    "Model": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Template",
     "CustomModelTexture": [
       {
         "Texture": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Base_Texture"

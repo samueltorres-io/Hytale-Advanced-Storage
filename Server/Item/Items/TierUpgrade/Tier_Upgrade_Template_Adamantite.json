@@ -16,4 +16,12 @@
       "UpgradeToTier": "7",
       "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_thorium"
     }
-  }
+}
+
+  "Icon": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Advanced",
+    "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Advanced_Texture"
+      }
+    ],
