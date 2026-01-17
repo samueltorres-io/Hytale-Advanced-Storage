@@ -5,6 +5,11 @@
     },
     "Icon": "Icons/Upgrade/Upgrade_Stack_T2.png",
     "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Upgrade/Upgrade_Stack_Advanced_Texture.png"
+      }
+    ],
     "Tags": {
       "UpgradeType": "Stack",
       "StackMultiplier": 4,
