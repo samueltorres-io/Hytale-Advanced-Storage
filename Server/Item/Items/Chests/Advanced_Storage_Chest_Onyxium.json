@@ -7,14 +7,14 @@
   "Categories": [
     "Furniture.Containers"
   ],
-  "Icon": "Icons/Items/Chest/Chest_Onyxium.png",
+  "Icon": "advancedstorage:Icons/Items/Chest/Chest_Onyxium",
   "BlockType": {
     "BlockParticleSetId": "Wood",
     "BlockSoundSetId": "Wood",
-    "CustomModel": "Blocks/Chest/Chest.blockymodel",
+    "CustomModel": "advancedstorage:Blocks/Items/Chest/Chest",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Chest/Chest_Onyxium_Texture.png",
+        "Texture": "advancedstorage:Blocks/Items/Chest/Chest_Onyxium_Texture",
         "Weight": 1
       }
     ],

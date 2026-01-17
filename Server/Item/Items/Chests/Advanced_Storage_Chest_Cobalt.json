@@ -7,14 +7,14 @@
   "Categories": [
     "Furniture.Containers"
   ],
-  "Icon": "Icons/Items/Chest/Chest_Cobalt",
+  "Icon": "advancedstorage:Icons/Items/Chest/Chest_Cobalt",
   "BlockType": {
     "BlockParticleSetId": "Wood",
     "BlockSoundSetId": "Wood",
-    "CustomModel": "Blocks/Chest/Chest.blockymodel",
+    "CustomModel": "advancedstorage:Blocks/Items/Chest/Chest",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Chest/Chest_Cobalt_Texture.png",
+        "Texture": "advancedstorage:Blocks/Items/Chest/Chest_Cobalt_Texture",
         "Weight": 1
       }
     ],

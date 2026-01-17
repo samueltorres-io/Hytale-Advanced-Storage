@@ -3,11 +3,12 @@
     "Name": "Tier Upgrade Template Mithril",
     "Description": "Upgrades an Adamantite Chest to Mithril. Increases storage space to 135 slots and unlocks 6 upgrade slots"
     },
-    "Icon": "advancedstorage:Icons/TierUpgrade/Tier_Upgrade_Template_Mithril",
-    "Model": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template",
+    "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Mithril",
+    "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
+    "Categories": ["Items.Tiers_Upgrades"],
     "CustomModelTexture": [
       {
-        "Texture": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template_Mithril_Texture"
+        "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Mithril_Texture"
       }
     ],
     "Tags": {

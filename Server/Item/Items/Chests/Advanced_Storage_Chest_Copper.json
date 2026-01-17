@@ -7,14 +7,14 @@
   "Categories": [
     "Furniture.Containers"
   ],
-  "Icon": "Icons/Items/Chest/Chest_Copper.png",
+  "Icon": "advancedstorage:Icons/Items/Chest/Chest_Copper",
   "BlockType": {
     "BlockParticleSetId": "Wood",
     "BlockSoundSetId": "Wood",
-    "CustomModel": "Blocks/Chest/Chest.blockymodel",
+    "CustomModel": "advancedstorage:Blocks/Items/Chest/Chest",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Chest/Chest_Copper_Texture.png",
+        "Texture": "advancedstorage:Blocks/Items/Chest/Chest_Copper_Texture",
         "Weight": 1
       }
     ],
@@ -40,8 +40,12 @@
         }
       ],
       "Definitions": {
-        "CloseWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Close" },
-        "OpenWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Open" }
+        "CloseWindow": { 
+          "InteractionSoundEventId": "SFX_Chest_Wooden_Close"
+        },
+        "OpenWindow": {
+          "InteractionSoundEventId": "SFX_Chest_Wooden_Open"
+        }
       },
       "Tags": {
         "StorageTier": "1",

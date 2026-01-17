@@ -7,14 +7,14 @@
   "Categories": [
     "Furniture.Containers"
   ],
-  "Icon": "Icons/Items/Chest/Chest_Adamantite.png",
+  "Icon": "advancedstorage:Icons/Items/Chest/Chest_Adamantite",
   "BlockType": {
     "BlockParticleSetId": "Wood",
     "BlockSoundSetId": "Wood",
-    "CustomModel": "Blocks/Chest/Chest.blockymodel",
+    "CustomModel": "advancedstorage:Blocks/Items/Chest/Chest",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Chest/Chest_Adamantite_Texture.png",
+        "Texture": "advancedstorage:Blocks/Items/Chest/Chest_Adamantite_Texture",
         "Weight": 1
       }
     ],

@@ -3,11 +3,12 @@
       "Name": "Tier Upgrade Template Base",
       "Description": "Essential component for forging storage upgrades"
     },
-    "Icon": "advancedstorage:Icons/TierUpgrade/Tier_Upgrade_Template",
-    "Model": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template",
+    "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template",
+    "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
+    "Categories": ["Items.Tiers_Upgrades"],
     "CustomModelTexture": [
       {
-        "Texture": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template_Texture"
+        "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Texture"
       }
     ],
     "Tags": {
