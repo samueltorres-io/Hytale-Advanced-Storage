@@ -5,6 +5,11 @@
     },
     "Icon": "Icons/TierUpgrade/Tier_Upgrade_Template_Cooper.png",
     "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.bbmodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/TierUpgrade/Tier_Upgrade_Template_Copper_Texture.png"
+      }
+    ],
     "Tags": {
       "StorageUpgrade": "Tier_Upgrade_Template_Cooper",
       "Material": "Copper",

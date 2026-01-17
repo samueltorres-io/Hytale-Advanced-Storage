@@ -5,6 +5,11 @@
     },
     "Icon": "Icons/TierUpgrade/Tier_Upgrade_Template_Gold.png",
     "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.bbmodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/TierUpgrade/Tier_Upgrade_Template_Gold_Texture.png"
+      }
+    ],
     "Tags": {
       "StorageUpgrade": "Tier_Upgrade_Template_Gold",
       "Material": "Gold",

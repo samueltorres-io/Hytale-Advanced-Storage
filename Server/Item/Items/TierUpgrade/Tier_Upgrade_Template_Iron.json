@@ -5,6 +5,11 @@
   },
   "Icon": "Icons/TierUpgrade/Tier_Upgrade_Template_Iron.png",
   "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.bbmodel",
+  "CustomModelTexture": [
+      {
+        "Texture": "Blocks/TierUpgrade/Tier_Upgrade_Template_Iron_Texture.png"
+      }
+    ],
   "Tags": {
     "StorageUpgrade": "Tier_Upgrade_Template_Iron",
     "Material": "Iron",
