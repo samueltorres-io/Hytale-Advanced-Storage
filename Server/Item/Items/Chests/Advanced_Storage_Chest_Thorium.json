@@ -19,6 +19,13 @@
       }
     ],
     "DrawType": "Model",
+    "Components": {
+      "Hytale:Container": {
+        "Capacity": 90, 
+        "Id": "MainGrid",
+        "SlotsPerRow": 9
+      }
+    },
     "Flags": {
       "IsUsable": true
     },
@@ -30,13 +37,6 @@
     "Material": "Solid",
     "Opacity": "Transparent",
     "ParticleColor": "#63412c",
-    "Components": {
-      "Hytale:Container": {
-        "Capacity": 90, 
-        "Id": "MainGrid",
-        "SlotsPerRow": 9
-      }
-    },
     "State": {
       "Id": "advanced_container",
       "SecondaryContainers": [
@@ -52,8 +52,12 @@
         "UpgradeEnergyMax": "12"
       },
       "Definitions": {
-        "CloseWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Close" },
-        "OpenWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Open" }
+        "CloseWindow": {
+          "InteractionSoundEventId": "SFX_Chest_Wooden_Close"
+        },
+        "OpenWindow": {
+          "InteractionSoundEventId": "SFX_Chest_Wooden_Open"
+        }
       }
     },
     "Supporting": {
