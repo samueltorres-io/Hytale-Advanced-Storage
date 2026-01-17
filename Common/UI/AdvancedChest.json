@@ -1,48 +1,55 @@
 {
-    "Window": {
-      "Id": "AdvancedStorageWindow",
-      "Size": [400, 500],
-      "Center": true,
-      "Components": [
-        {
-          "Type": "Header",
-          "Text": "{Block.Name}"
-        },
-        {
-          "Type": "ScrollContainer",
-          "Id": "InventoryScroll",
-          "Position": [10, 50],
-          "Size": [300, 400]
-        },
-        {
-          "Type": "Panel",
-          "Id": "UpgradeSidebar",
-          "Position": [320, 50],
-          "Size": [60, 400],
-          "Background": "ui_panel_dark",
-          "Components": [
-            {
-              "Type": "Label",
-              "Text": "Upgrades",
-              "FontSize": 12,
-              "Dock": "Top"
-            },
-            {
-              "Type": "ItemGrid",
-              "Id": "MainGrid",
-              "Source": "Block.MainGrid",
-              "Columns": 9,
-              "SlotSpacing": 2
-            },
-            {
-              "Type": "Label",
-              "Text": "Energy: {Block.Tags.CurrentEnergy}/{Block.Tags.UpgradeEnergyMax}",
-              "Color": "{Block.Tags.EnergyStatus == 'OVERLOAD' ? '#FF0000' : '#FFFFFF'}",
-              "FontSize": 10,
-              "Dock": "Bottom"
-            }
-          ]
+  "Window": {
+    "Id": "AdvancedStorageWindow",
+    "Size": [400, 500],
+    "Center": true,
+    "Components": [
+      {
+        "Type": "Header",
+        "Text": "{Block.Name}"
+      },
+      {
+        "Type": "ScrollContainer",
+        "Id": "InventoryScroll",
+        "Position": [10, 50],
+        "Size": [300, 400],
+        "Content": {
+          "Type": "ItemGrid",
+          "Id": "MainGridUI",
+          "Source": "Block.MainGrid",
+          "Columns": 9,
+          "SlotSpacing": 2
         }
-      ]
-    }
+      },
+      {
+        "Type": "Panel",
+        "Id": "UpgradeSidebar",
+        "Position": [320, 50],
+        "Size": [60, 400],
+        "Background": "ui_panel_dark",
+        "Components": [
+          {
+            "Type": "Label",
+            "Text": "Upgrades",
+            "FontSize": 12,
+            "Dock": "Top"
+          },
+          {
+            "Type": "ItemGrid",
+            "Id": "UpgradeSlots",
+            "Source": "Block.UpgradeInventory",
+            "Columns": 1,
+            "MaxSlots": "{Block.Tags.UpgradeSlots}"
+          },
+          {
+            "Type": "Label",
+            "Text": "Energy: {Block.Tags.CurrentEnergy}/{Block.Tags.UpgradeEnergyMax}",
+            "Color": "{Block.Tags.EnergyStatus == 'OVERLOAD' ? '#FF0000' : '#FFFFFF'}",
+            "FontSize": 10,
+            "Dock": "Bottom"
+          }
+        ]
+      }
+    ]
   }
+}
