@@ -1,13 +1,14 @@
 {
     "TranslationProperties": {
       "Name": "Stack Upgrade (Elite)",
-      "Description": "Multiplies slot capacity by 8x"
+      "Description": "Multiplies slot capacity by 8x and consumes 3 Energy Points"
     },
     "Icon": "Icons/Upgrade/Upgrade_Stack_T3.png",
     "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
     "Tags": {
       "UpgradeType": "Stack",
       "StackMultiplier": 8,
-      "UpgradeTier": 3
+      "UpgradeTier": 3,
+      "UpgradeCost": 3
     }
 }
