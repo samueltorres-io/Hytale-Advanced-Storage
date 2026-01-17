@@ -46,6 +46,8 @@ namespace AdvancedStorage.Server.Scripts
                 }
             }
 
+            block.Tags.Set("CurrentEnergy", totalEnergyUsed.ToString());
+
             /* Validação de Regras */
             bool overEnergy = totalEnergyUsed > maxEnergy;
             bool overLimit = stackUpgradeCount > 2;
@@ -53,10 +55,10 @@ namespace AdvancedStorage.Server.Scripts
             if (overEnergy || overLimit) {
                 /* Penalidade: Se violar as regras, o baú volta ao stack padrão (x1) */
                 mainInv.SetCustomMaxStackMultiplier(1);
-                
-                player.SendNotification("Energy limit or category exceeded!");
+                block.Tags.Set("EnergyStatus", "OVERLOAD");
             } else {
                 mainInv.SetCustomMaxStackMultiplier(Math.Max(1, totalMultiplier));
+                block.Tags.Set("EnergyStatus", "OK");
             }
         }
     }
