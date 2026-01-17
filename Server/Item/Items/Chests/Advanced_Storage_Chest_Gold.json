@@ -14,7 +14,7 @@
     "CustomModel": "Blocks/Items/Chest/Chest.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Items/Chest/Chest_Gold_Texture.png",
+        "Texture": "Blocks/Items/Chest/Chest_Gold_Texture",
         "Weight": 1
       }
     ],

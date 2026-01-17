@@ -7,7 +7,7 @@
     "Model": "Blocks/Items/Upgrade/Upgrade_Stack_Template.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Items/Upgrade/Upgrade_Stack_Supreme_Texture.png"
+        "Texture": "Blocks/Items/Upgrade/Upgrade_Stack_Supreme_Texture"
       }
     ],
     "Tags": {

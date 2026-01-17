@@ -7,7 +7,7 @@
     "Model": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Silver_Texture.png"
+        "Texture": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Silver_Texture"
       }
     ],
     "Tags": {
