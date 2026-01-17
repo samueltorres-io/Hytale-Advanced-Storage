@@ -1,74 +1,65 @@
+/* Server/Scripts/StackUpgradeHandler.cs */
+
 using Hytale.API;
 using Hytale.API.Blocks;
 using Hytale.API.Inventory;
-using System.Linq;
-
-/**
- * Pontos cruciais da implementação:
- * 
- * - Hook IInventoryChangedHandler:
- * Ele garante que o multiplicador seja recalculado instantaneamente
- * no momento em que o jogador coloca ou retira um upgrade da sidebar.
- *
- * - SetCustomMaxStackMultiplier:
- * Esta é uma função hipotética da API (dependendo da versão final da
- * SDK do Hytale) que permite que um container específico ignore o DefaultStack.
- * Se a API for mais rígida, a alternativa é interceptar o evento OnItemAdded
- * e validar manualmente se a quantidade excede BaseStack * Multiplier.
- *
- * Respeito à Base:
- * O código lê o multiplicador (ex: 64) e o sistema do Hytale multiplica pelo
- * valor base do item (Gema 25 ou Ingot 100), resultando nos 1600 ou 6400.
-*/
+using System;
 
 namespace AdvancedStorage.Server.Scripts
 {
-    /**
-     * Gerencia a lógica de multiplicação de slots baseada nos upgrades inseridos
-     */
     public class StackUpgradeHandler : IInventoryChangedHandler
     {
-        /* Este evento é disparado sempre que algo muda nos inventários do bloco */
         public void OnInventoryChanged(Block block, string containerId)
         {
-            /* Só nos interessa se a mudança foi no inventário de UPGRADES */
-            if (containerId == "UpgradeInventory")
-            {
-                ApplyStackLimit(block);
+            /* Só processa se a mudança for no inventário de upgrades */
+            if (containerId == "UpgradeInventory") {
+                ValidateAndApply(block);
             }
         }
 
-        private void ApplyStackLimit(Block block)
-        {
-            int multiplier = CalculateTotalMultiplier(block);
-            
-            /* Acessa o inventário principal do baú */
-            IInventory mainInv = block.GetInventory("MainGrid");
-
-            /* Aplica o multiplicador em cada slot individualmente */
-            /* No Hytale, modificamos o MaxStackSize permitido para o container específico */
-            mainInv.SetCustomMaxStackMultiplier(multiplier);
-        }
-
-        private int CalculateTotalMultiplier(Block block)
+        private void ValidateAndApply(Block block)
         {
             IInventory upgradeInv = block.GetInventory("UpgradeInventory");
-            int totalMultiplier = 1;
+            IInventory mainInv = block.GetInventory("MainGrid");
 
-            /* Percorre os slots de upgrade procurando por "StackMultiplier" */
+            int totalEnergyUsed = 0;
+            int stackUpgradeCount = 0;
+            int totalMultiplier = 0;
+
+            /* Pega a energia máxima do baú (Tag definida no JSON do Bloco) */
+            int.TryParse(block.Tags.Get("UpgradeEnergyMax") ?? "5", out int maxEnergy);
+
             for (int i = 0; i < upgradeInv.Size; i++)
             {
                 ItemStack stack = upgradeInv.GetStack(i);
-                if (!stack.IsEmpty && stack.Item.Tags.Contains("StackMultiplier"))
-                {
-                    int itemMultiplier = int.Parse(stack.Item.Tags.Get("StackMultiplier"));
-                    
-                    /* Para evitar valores infinitos, vamos usar o maior valor presente ou somar */
-                    totalMultiplier = System.Math.Max(totalMultiplier, itemMultiplier);
+                if (stack.IsEmpty) continue;
+
+                /* 1. Soma o custo de energia de qualquer item no slot de upgrade */
+                int.TryParse(stack.Item.Tags.Get("UpgradeCost") ?? "0", out int cost);
+                totalEnergyUsed += cost;
+
+                /* 2. Lógica específica para Stack Upgrades */
+                if (stack.Item.Tags.Get("UpgradeType") == "Stack") {
+                    stackUpgradeCount++;
+                    int.TryParse(stack.Item.Tags.Get("StackMultiplier") ?? "1", out int m);
+                    totalMultiplier += m; /* Soma linear: x2 + x2 = x4 */
                 }
             }
 
-            return totalMultiplier;
+            block.Tags.Set("CurrentEnergy", totalEnergyUsed.ToString());
+
+            /* Validação de Regras */
+            bool overEnergy = totalEnergyUsed > maxEnergy;
+            bool overLimit = stackUpgradeCount > 2;
+
+            if (overEnergy || overLimit) {
+                /* Penalidade: Se violar as regras, o baú volta ao stack padrão (x1) */
+                mainInv.SetCustomMaxStackMultiplier(1);
+                block.Tags.Set("EnergyStatus", "OVERLOAD");
+            } else {
+                mainInv.SetCustomMaxStackMultiplier(Math.Max(1, totalMultiplier));
+                block.Tags.Set("EnergyStatus", "OK");
+            }
         }
     }
 }

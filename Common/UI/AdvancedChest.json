@@ -40,6 +40,13 @@
               "Source": "Block.UpgradeInventory",
               "Columns": 1,
               "MaxSlots": "{Block.Tags.UpgradeSlots}" 
+            },
+            {
+              "Type": "Label",
+              "Text": "Energy: {Block.Tags.CurrentEnergy}/{Block.Tags.UpgradeEnergyMax}",
+              "Color": "{Block.Tags.EnergyStatus == 'OVERLOAD' ? '#FF0000' : '#FFFFFF'}",
+              "FontSize": 10,
+              "Dock": "Bottom"
             }
           ]
         }

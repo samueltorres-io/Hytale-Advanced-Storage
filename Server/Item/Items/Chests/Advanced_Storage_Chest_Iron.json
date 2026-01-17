@@ -42,6 +42,12 @@
       "Definitions": {
         "CloseWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Close" },
         "OpenWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Open" }
+      },
+      "Tags": {
+        "StorageTier": "2",
+        "IsAdvancedStorage": "true",
+        "UpgradeSlots": "2",
+        "UpgradeEnergyMax": "4"
       }
     },
     "Supporting": {
@@ -72,11 +78,6 @@
       "Id": "Charcoal"
     }
   ],
-  "Tags": {
-    "StorageTier": "2",
-    "IsAdvancedStorage": "true",
-    "UpgradeSlots": "2"
-  },
   "IconProperties": {
     "Scale": 0.55,
     "Rotation": [

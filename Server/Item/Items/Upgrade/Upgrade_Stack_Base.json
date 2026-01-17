@@ -8,6 +8,7 @@
     "Tags": {
       "UpgradeType": "Stack",
       "StackMultiplier": 2,
-      "UpgradeTier": 1
+      "UpgradeTier": 1,
+      "UpgradeCost": 1
     }
 }
