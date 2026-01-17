@@ -105,7 +105,7 @@ namespace AdvancedStorage.Server.Scripts
             List<ItemStack> items = new List<ItemStack>();
             if (inv == null) return items;
             for (int i = 0; i < inv.Size; i++) {
-                if (!inv.GetStack(i).IsEmpty) items.Add(oldInventory.GetStack(i).Clone());
+                if (!inv.GetStack(i).IsEmpty) items.Add(inv.GetStack(i).Clone());
             }
             return items;
         }
