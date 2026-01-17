@@ -71,7 +71,7 @@ namespace AdvancedStorage.Server.Scripts
 
             /* E. Consumir o item de upgrade e feedback */
             player.RemoveHeldItem(1);
-            player.PlaySound("advancedstorage:sfx_upgrade_metal");
+            // player.PlaySound("advancedstorage:sfx_upgrade_metal");
             player.SendNotification("Chest upgraded to level " + newTier + "!");
         }
 
