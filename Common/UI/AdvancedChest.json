@@ -36,10 +36,10 @@
             },
             {
               "Type": "ItemGrid",
-              "Id": "UpgradeSlots",
-              "Source": "Block.UpgradeInventory",
-              "Columns": 1,
-              "MaxSlots": "{Block.Tags.UpgradeSlots}" 
+              "Id": "MainGrid",
+              "Source": "Block.MainGrid",
+              "Columns": 9,
+              "SlotSpacing": 2
             },
             {
               "Type": "Label",
