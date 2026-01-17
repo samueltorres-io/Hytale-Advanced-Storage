@@ -7,14 +7,14 @@
   "Categories": [
     "Furniture.Containers"
   ],
-  "Icon": "Icons/Items/Chest/Chest_Thorium.png",
+  "Icon": "advancedstorage:Icons/Items/Chest/Chest_Thorium",
   "BlockType": {
     "BlockParticleSetId": "Wood",
     "BlockSoundSetId": "Wood",
-    "CustomModel": "Blocks/Items/Chest/Chest.blockymodel",
+    "CustomModel": "advancedstorage:Blocks/Items/Chest/Chest",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Items/Chest/Chest_Thorium_Texture",
+        "Texture": "advancedstorage:Blocks/Items/Chest/Chest_Thorium_Texture",
         "Weight": 1
       }
     ],
