@@ -43,16 +43,12 @@ namespace AdvancedStorage.Server.Scripts
 
         private void PerformUpgrade(Player player, Block oldBlock, Item upgradeItem, string newTier)
         {
-            /* A. Salvar Inventário Antigo */
-            IInventory oldInventory = oldBlock.GetInventory();
-            List<ItemStack> savedItems = new List<ItemStack>();
+            /* A. Salvar Inventário Antigo (Itens e upgrades)*/
+            IInventory oldMainInv = oldBlock.GetInventory("MainGrid");
+            IInventory oldUpgradeInv = oldBlock.GetInventory("UpgradeInventory");
             
-            for (int i = 0; i < oldInventory.Size; i++)
-            {
-                if (!oldInventory.GetStack(i).IsEmpty) {
-                    savedItems.Add(oldInventory.GetStack(i).Clone());
-                }
-            }
+            List<ItemStack> savedMainItems = SaveInventory(oldMainInv);
+            List<ItemStack> savedUpgrades = SaveInventory(oldUpgradeInv);
 
             /* B. Definir o ID do novo bloco baseado no Tier (Mapeamento) */
             string newBlockId = GetChestIdFromTier(newTier);
@@ -62,6 +58,10 @@ namespace AdvancedStorage.Server.Scripts
             
             /* D. Recuperar o novo inventário e inserir os itens salvos */
             Block newBlock = World.GetBlock(oldBlock.Position);
+
+            RestoreInventory(newBlock.GetInventory("MainGrid"), savedMainItems);
+            RestoreInventory(newBlock.GetInventory("UpgradeInventory"), savedUpgrades);
+
             IInventory newInventory = newBlock.GetInventory();
 
             foreach (var item in savedItems)
@@ -98,6 +98,16 @@ namespace AdvancedStorage.Server.Scripts
             int current = int.Parse(currentBlock.Tags.Get("StorageTier"));
             int next = int.Parse(upgradeTier);
             return next == current + 1;
+        }
+
+        private List<ItemStack> SaveInventory(IInventory inv)
+        {
+            List<ItemStack> items = new List<ItemStack>();
+            if (inv == null) return items;
+            for (int i = 0; i < inv.Size; i++) {
+                if (!inv.GetStack(i).IsEmpty) items.Add(oldInventory.GetStack(i).Clone());
+            }
+            return items;
         }
     }
 }
