@@ -3,8 +3,13 @@
       "Name": "Stack Upgrade (Ultimate)",
       "Description": "Multiplies slot capacity by 16x and consumes 4 Energy Points"
     },
-    "Icon": "Icons/Upgrade/Upgrade_Stack_T4.png",
-    "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
+    "Icon": "advancedstorage:Icons/Upgrade/Upgrade_Stack_Ultimate",
+    "Model": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Template",
+    "CustomModelTexture": [
+      {
+        "Texture": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Ultimate_Texture"
+      }
+    ],
     "Tags": {
       "UpgradeType": "Stack",
       "StackMultiplier": 16,

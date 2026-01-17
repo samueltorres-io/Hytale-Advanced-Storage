@@ -3,11 +3,11 @@
     "Name": "Tier Upgrade Template Iron",
     "Description": "Upgrades a Copper Chest to an Iron Chest. Increases storage space to 45 slots and unlocks 2 upgrade slots"
   },
-  "Icon": "Icons/TierUpgrade/Tier_Upgrade_Template_Iron.png",
-  "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.bbmodel",
+  "Icon": "advancedstorage:Icons/TierUpgrade/Tier_Upgrade_Template_Iron",
+  "Model": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template",
   "CustomModelTexture": [
       {
-        "Texture": "Blocks/TierUpgrade/Tier_Upgrade_Template_Iron_Texture.png"
+        "Texture": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template_Iron_Texture"
       }
     ],
   "Tags": {

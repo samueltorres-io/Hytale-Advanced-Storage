@@ -1,13 +1,13 @@
 {
     "TranslationProperties": {
-      "Name": "Tier Upgrade Template Cooper",
+      "Name": "Tier Upgrade Template Copper",
       "Description": "Upgrades a Wooden Chest to Copper. Increases storage space to 27 slots and unlocks 1 upgrade slot"
     },
-    "Icon": "Icons/TierUpgrade/Tier_Upgrade_Template_Cooper.png",
-    "Model": "Blocks/TierUpgrade/Tier_Upgrade_Template.bbmodel",
+    "Icon": "advancedstorage:Icons/TierUpgrade/Tier_Upgrade_Template_Copper",
+    "Model": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/TierUpgrade/Tier_Upgrade_Template_Copper_Texture.png"
+        "Texture": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template_Copper_Texture"
       }
     ],
     "Tags": {

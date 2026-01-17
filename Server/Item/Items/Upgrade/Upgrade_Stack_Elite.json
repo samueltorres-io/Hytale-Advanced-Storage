@@ -3,8 +3,13 @@
       "Name": "Stack Upgrade (Elite)",
       "Description": "Multiplies slot capacity by 8x and consumes 3 Energy Points"
     },
-    "Icon": "Icons/Upgrade/Upgrade_Stack_T3.png",
-    "Model": "Blocks/Upgrade/Upgrade_Stack_Template.bbmodel",
+    "Icon": "advancedstorage:Icons/Upgrade/Upgrade_Stack_Elite",
+    "Model": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Template",
+    "CustomModelTexture": [
+      {
+        "Texture": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Elite_Texture"
+      }
+    ],
     "Tags": {
       "UpgradeType": "Stack",
       "StackMultiplier": 8,
