@@ -12,14 +12,7 @@
           "Type": "ScrollContainer",
           "Id": "InventoryScroll",
           "Position": [10, 50],
-          "Size": [300, 400],
-          "Content": {
-            "Type": "ItemGrid",
-            "Id": "MainGrid",
-            "Source": "Block.Inventory",
-            "Columns": 9,
-            "SlotSpacing": 2
-          }
+          "Size": [300, 400]
         },
         {
           "Type": "Panel",
