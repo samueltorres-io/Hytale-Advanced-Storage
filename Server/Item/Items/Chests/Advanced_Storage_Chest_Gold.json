@@ -47,7 +47,7 @@
         "StorageTier": "4",
         "IsAdvancedStorage": "true",
         "UpgradeSlots": "3",
-        "UpgradeEnergyMax": "6"
+        "UpgradeEnergyMax": "8"
       }
     },
     "Supporting": {
