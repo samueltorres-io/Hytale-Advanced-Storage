@@ -3,11 +3,11 @@
     "Name": "Tier Upgrade Template Cobalt",
     "Description": "Upgrades an Gold Chest to Cobalt. Increases storage space to 81 slots and unlocks 4 upgrade slots"
     },
-    "Icon": "advancedstorage:Icons/TierUpgrade/Tier_Upgrade_Template_Cobalt",
-    "Model": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template",
+    "Icon": "Icons/Items/TierUpgrade/Tier_Upgrade_Template_Cobalt.png",
+    "Model": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template_Cobalt_Texture"
+        "Texture": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Cobalt_Texture.png"
       }
     ],
     "Tags": {

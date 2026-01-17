@@ -3,11 +3,11 @@
     "Name": "Tier Upgrade Template Gold",
     "Description": "Upgrades an Silver Chest to Gold. Increases storage space to 72 slots and unlocks 3 upgrade slots"
     },
-    "Icon": "advancedstorage:Icons/TierUpgrade/Tier_Upgrade_Template_Gold",
-    "Model": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template",
+    "Icon": "Icons/Items/TierUpgrade/Tier_Upgrade_Template_Gold.png",
+    "Model": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "advancedstorage:Blocks/TierUpgrade/Tier_Upgrade_Template_Gold_Texture"
+        "Texture": "Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Gold_Texture.png"
       }
     ],
     "Tags": {

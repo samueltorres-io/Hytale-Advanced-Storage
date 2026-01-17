@@ -3,11 +3,11 @@
       "Name": "Stack Upgrade (Supreme)",
       "Description": "Multiplies slot capacity by 64x and consumes 5 Energy Points"
     },
-    "Icon": "advancedstorage:Icons/Upgrade/Upgrade_Stack_Supreme",
-    "Model": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Template",
+    "Icon": "Icons/Items/Upgrade/Upgrade_Stack_Supreme.png",
+    "Model": "Blocks/Items/Upgrade/Upgrade_Stack_Template.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "advancedstorage:Blocks/Upgrade/Upgrade_Stack_Supreme_Texture"
+        "Texture": "Blocks/Items/Upgrade/Upgrade_Stack_Supreme_Texture.png"
       }
     ],
     "Tags": {

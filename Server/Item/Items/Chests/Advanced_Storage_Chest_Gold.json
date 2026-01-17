@@ -7,14 +7,14 @@
   "Categories": [
     "Furniture.Containers"
   ],
-  "Icon": "Icons/Items/Chest/Chest_Gold",
+  "Icon": "Icons/Items/Chest/Chest_Gold.png",
   "BlockType": {
     "BlockParticleSetId": "Wood",
     "BlockSoundSetId": "Wood",
-    "CustomModel": "Blocks/Chest/Chest.blockymodel",
+    "CustomModel": "Blocks/Items/Chest/Chest.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Chest/Chest_Gold_Texture.png",
+        "Texture": "Blocks/Items/Chest/Chest_Gold_Texture.png",
         "Weight": 1
       }
     ],
