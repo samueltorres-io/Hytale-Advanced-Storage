@@ -1,17 +1,9 @@
 /* Server/Scripts/ChestManager */
 
-/**
- * Este script fará o seguinte:
- * 1. intercepta o clique (copper tier upgrade -> wood chest)
- * 2. valida o upgrade
- * 3. salva os itens (que estavam no baú enteriormente)
- * 4. troca o bloco
- * 5. devolve os itens
-*/
-
 using Hytale.API;
 using Hytale.API.Entities;
 using Hytale.API.Blocks;
+using Hytale.API.Inventory;
 using System.Collections.Generic;
 
 namespace AdvancedStorage.Server.Scripts
@@ -24,18 +16,22 @@ namespace AdvancedStorage.Server.Scripts
             Item heldItem = player.GetHeldItem();
             Block targetBlock = event.Block;
 
+            /* Evita erro se o jogador interagir com a mão vazia */
+            if (heldItem == null || heldItem.Tags == null) return;
+
             /* 1. Verificar se o item é um Tier Upgrade do nosso mod */
             if (heldItem.Tags.Contains("UpgradeToTier"))
             {
                 string targetTier = heldItem.Tags.Get("UpgradeToTier");
                 string requiredBlock = heldItem.Tags.Get("RequiredBaseBlock");
 
-                /* 2. Validar se o bloco clicado é o alvo correto para este upgrade */
-                if (targetBlock.Id == requiredBlock || (targetBlock.Tags.Contains("IsAdvancedStorage") && IsNextTier(targetBlock, targetTier)))
+                /* 2. Validar o alvo. Se for Wood Chest (Vanilla) ou um baú do nosso mod */
+                bool isVanillaTarget = (requiredBlock == "hytale:wood_chest" && targetBlock.Id == "hytale:wood_chest");
+                bool isModTarget = targetBlock.Tags.Contains("IsAdvancedStorage") && IsNextTier(targetBlock, targetTier);
+
+                if (targetBlock.Id == requiredBlock || isVanillaTarget || isModTarget)
                 {
-                    /* Cancela a abertura do baú vanilla para processar o upgrade */
                     event.Cancel();
-                    
                     PerformUpgrade(player, targetBlock, heldItem, targetTier);
                 }
             }
@@ -43,36 +39,36 @@ namespace AdvancedStorage.Server.Scripts
 
         private void PerformUpgrade(Player player, Block oldBlock, Item upgradeItem, string newTier)
         {
-            /* A. Salvar Inventário Antigo (Itens e upgrades)*/
-            IInventory oldMainInv = oldBlock.GetInventory("MainGrid");
+            /* A. Salvar Inventários */
+            IInventory oldMainInv = oldBlock.GetInventory("MainGrid"); 
+            if (oldMainInv == null) oldMainInv = oldBlock.GetInventory();
+
             IInventory oldUpgradeInv = oldBlock.GetInventory("UpgradeInventory");
             
             List<ItemStack> savedMainItems = SaveInventory(oldMainInv);
             List<ItemStack> savedUpgrades = SaveInventory(oldUpgradeInv);
 
-            /* B. Definir o ID do novo bloco baseado no Tier (Mapeamento) */
+            /* B. Definir novo ID */
             string newBlockId = GetChestIdFromTier(newTier);
 
-            /* C. Substituir o Bloco no Mundo */
+            /* C. Substituir Bloco */
             World.SetBlock(oldBlock.Position, Block.FromId(newBlockId));
             
-            /* D. Recuperar o novo inventário e inserir os itens salvos */
+            /* D. Restaurar Itens no Novo Bloco */
             Block newBlock = World.GetBlock(oldBlock.Position);
+            
+            /* Restaura o grid principal */
+            if (newBlock.GetInventory("MainGrid") != null)
+                RestoreInventory(newBlock.GetInventory("MainGrid"), savedMainItems);
+            
+            /* Restaura os upgrades */
+            if (newBlock.GetInventory("UpgradeInventory") != null)
+                RestoreInventory(newBlock.GetInventory("UpgradeInventory"), savedUpgrades);
 
-            RestoreInventory(newBlock.GetInventory("MainGrid"), savedMainItems);
-            RestoreInventory(newBlock.GetInventory("UpgradeInventory"), savedUpgrades);
-
-            IInventory newInventory = newBlock.GetInventory();
-
-            foreach (var item in savedItems)
-            {
-                newInventory.AddItem(item);
-            }
-
-            /* E. Consumir o item de upgrade e feedback */
+            /* E. Consumir Upgrade e Feedback */
             player.RemoveHeldItem(1);
-            // player.PlaySound("advancedstorage:sfx_upgrade_metal");
-            player.SendNotification("Chest upgraded to level " + newTier + "!");
+            player.PlaySound("SFX_Anvil_Use");
+            player.SendNotification("Chest upgraded to Tier " + newTier + "!");
         }
 
         private string GetChestIdFromTier(string tier)
@@ -94,7 +90,7 @@ namespace AdvancedStorage.Server.Scripts
 
         private bool IsNextTier(Block currentBlock, string upgradeTier)
         {
-            /* Lógica simples: Se o baú atual é Tier 1, o upgrade deve ser Tier 2 */
+            if (!currentBlock.Tags.Contains("StorageTier")) return false;
             int current = int.Parse(currentBlock.Tags.Get("StorageTier"));
             int next = int.Parse(upgradeTier);
             return next == current + 1;
@@ -104,10 +100,29 @@ namespace AdvancedStorage.Server.Scripts
         {
             List<ItemStack> items = new List<ItemStack>();
             if (inv == null) return items;
+            
             for (int i = 0; i < inv.Size; i++) {
-                if (!inv.GetStack(i).IsEmpty) items.Add(inv.GetStack(i).Clone());
+                ItemStack stack = inv.GetStack(i);
+                if (stack != null && !stack.IsEmpty) {
+                    items.Add(stack.Clone());
+                } else {
+                    items.Add(ItemStack.Empty);
+                }
             }
             return items;
+        }
+
+        private void RestoreInventory(IInventory inv, List<ItemStack> items)
+        {
+            if (inv == null || items == null) return;
+
+            for (int i = 0; i < inv.Size && i < items.Count; i++)
+            {
+                if (!items[i].IsEmpty)
+                {
+                    inv.SetStack(i, items[i]);
+                }
+            }
         }
     }
 }
