@@ -32,21 +32,32 @@
             "Type": "Label",
             "Text": "Upgrades",
             "FontSize": 12,
-            "Dock": "Top"
+            "Dock": "Top",
+            "Alignment": "Center"
           },
           {
             "Type": "ItemGrid",
             "Id": "UpgradeSlots",
             "Source": "Block.UpgradeInventory",
             "Columns": 1,
-            "MaxSlots": "{Block.Tags.UpgradeSlots}"
+            "MaxSlots": "{Block.Tags.UpgradeSlots}",
+            "Margin": [0, 20, 0, 0]
           },
           {
             "Type": "Label",
             "Text": "Energy: {Block.Tags.CurrentEnergy}/{Block.Tags.UpgradeEnergyMax}",
-            "Color": "{Block.Tags.EnergyStatus == 'OVERLOAD' ? '#FF0000' : '#FFFFFF'}",
+            "Color": "#FFFFFF",
             "FontSize": 10,
-            "Dock": "Bottom"
+            "Dock": "Bottom",
+            "Visible": "{Block.Tags.EnergyStatus != 'OVERLOAD'}"
+          },
+          {
+            "Type": "Label",
+            "Text": "OVERLOAD: {Block.Tags.CurrentEnergy}/{Block.Tags.UpgradeEnergyMax}",
+            "Color": "#FF0000",
+            "FontSize": 10,
+            "Dock": "Bottom",
+            "Visible": "{Block.Tags.EnergyStatus == 'OVERLOAD'}"
           }
         ]
       }
