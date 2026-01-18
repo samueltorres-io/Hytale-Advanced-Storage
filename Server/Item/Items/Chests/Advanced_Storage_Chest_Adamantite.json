@@ -19,6 +19,13 @@
       }
     ],
     "DrawType": "Model",
+    "Components": {
+      "Hytale:Container": {
+        "Capacity": 108, 
+        "Id": "MainGrid",
+        "SlotsPerRow": 9
+      }
+    },
     "Flags": {
       "IsUsable": true
     },
@@ -32,22 +39,25 @@
     "ParticleColor": "#63412c",
     "State": {
       "Id": "advanced_container",
-      "Capacity": 108,
       "SecondaryContainers": [
         {
           "Id": "UpgradeInventory",
           "Capacity": 5
         }
       ],
-      "Definitions": {
-        "CloseWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Close" },
-        "OpenWindow": { "InteractionSoundEventId": "SFX_Chest_Wooden_Open" }
-      },
       "Tags": {
         "StorageTier": "7",
         "IsAdvancedStorage": "true",
         "UpgradeSlots": "5",
         "UpgradeEnergyMax": "16"
+      },
+      "Definitions": {
+        "CloseWindow": {
+          "InteractionSoundEventId": "SFX_Chest_Wooden_Close"
+        },
+        "OpenWindow": {
+          "InteractionSoundEventId": "SFX_Chest_Wooden_Open"
+        }
       }
     },
     "Supporting": {

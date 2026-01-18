@@ -1,20 +1,20 @@
 {
   "TranslationProperties": {
-    "Name": "Tier Upgrade Template Cobalt",
-    "Description": "Upgrades an Gold Chest to Cobalt. Increases storage space to 81 slots and unlocks 4 upgrade slots"
-    },
-    "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Cobalt",
-    "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
-    "Categories": ["Items.Tiers_Upgrades"],
-    "CustomModelTexture": [
-      {
-        "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Cobalt_Texture"
-      }
-    ],
-    "Tags": {
-      "StorageUpgrade": "Tier_Upgrade_Template_Cobalt",
-      "Material": "Cobalt",
-      "UpgradeToTier": "5",
-      "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_gold"
+    "Name": "Tier Upgrade: Cobalt",
+    "Description": "Upgrades an Gold Chest to Cobalt."
+  },
+  "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Cobalt",
+  "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
+  "Categories": ["Items.Tiers_Upgrades"],
+  "CustomModelTexture": [
+    {
+      "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Cobalt_Texture"
     }
+  ],
+  "Tags": [
+    "StorageUpgrade: Tier_Upgrade_Template_Cobalt",
+    "Material: Cobalt",
+    "UpgradeToTier: 5",
+    "RequiredBaseBlock: advancedstorage:advanced_storage_chest_gold"
+  ]
 }

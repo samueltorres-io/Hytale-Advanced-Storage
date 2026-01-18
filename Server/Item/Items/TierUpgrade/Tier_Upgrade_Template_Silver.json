@@ -1,20 +1,20 @@
 {
   "TranslationProperties": {
-    "Name": "Tier Upgrade Template Silver",
-    "Description": "Upgrades an Iron Chest to Silver. Increases storage space to 68 slots and unlocks 3 upgrade slots"
-    },
-    "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Silver",
-    "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
-    "Categories": ["Items.Tiers_Upgrades"],
-    "CustomModelTexture": [
-      {
-        "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Silver_Texture"
-      }
-    ],
-    "Tags": {
-      "StorageUpgrade": "Tier_Upgrade_Template_Silver",
-      "Material": "Silver",
-      "UpgradeToTier": "3",
-      "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_iron"
+    "Name": "Tier Upgrade: Silver",
+    "Description": "Upgrades an Iron Chest to Silver."
+  },
+  "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Silver",
+  "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
+  "Categories": ["Items.Tiers_Upgrades"],
+  "CustomModelTexture": [
+    {
+      "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Silver_Texture"
     }
+  ],
+  "Tags": [
+    "StorageUpgrade: Tier_Upgrade_Template_Silver",
+    "Material: Silver",
+    "UpgradeToTier: 3",
+    "RequiredBaseBlock: advancedstorage:advanced_storage_chest_iron"
+  ]
 }

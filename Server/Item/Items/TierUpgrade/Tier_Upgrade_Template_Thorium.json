@@ -1,20 +1,20 @@
 {
   "TranslationProperties": {
-    "Name": "Tier Upgrade Template Thorium",
-    "Description": "Upgrades an Cobalt Chest to Thorium. Increases storage space to 90 slots and unlocks 4 upgrade slots"
-    },
-    "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Thorium",
-    "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
-    "Categories": ["Items.Tiers_Upgrades"],
-    "CustomModelTexture": [
-      {
-        "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Thorium_Texture"
-      }
-    ],
-    "Tags": {
-      "StorageUpgrade": "Tier_Upgrade_Template_Thorium",
-      "Material": "Thorium",
-      "UpgradeToTier": "6",
-      "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_cobalt"
+    "Name": "Tier Upgrade: Thorium",
+    "Description": "Upgrades an Cobalt Chest to Thorium."
+  },
+  "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Thorium",
+  "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
+  "Categories": ["Items.Tiers_Upgrades"],
+  "CustomModelTexture": [
+    {
+      "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Thorium_Texture"
     }
+  ],
+  "Tags": [
+    "StorageUpgrade: Tier_Upgrade_Template_Thorium",
+    "Material: Thorium",
+    "UpgradeToTier: 6",
+    "RequiredBaseBlock: advancedstorage:advanced_storage_chest_cobalt"
+  ]
 }
