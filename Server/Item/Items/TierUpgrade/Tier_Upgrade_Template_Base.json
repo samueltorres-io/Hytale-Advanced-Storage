@@ -11,8 +11,8 @@
         "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Texture"
       }
     ],
-    "Tags": {
-      "StorageUpgrade": "Tier_Upgrade_Template_Base",
-      "Material": "Iron"
-    }
+    "Tags": [
+      "StorageUpgrade: Tier_Upgrade_Template_Base",
+      "Material: Iron"
+    ]
 }

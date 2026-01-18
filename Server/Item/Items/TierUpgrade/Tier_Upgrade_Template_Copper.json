@@ -11,10 +11,10 @@
       "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Copper_Texture"
     }
   ],
-  "Tags": {
-    "StorageUpgrade": "Tier_Upgrade_Template_Cooper",
-    "Material": "Copper",
-    "UpgradeToTier": "1",
-    "RequiredBaseBlock": "hytale:wood_chest" 
-  }
+  "Tags": [
+    "StorageUpgrade: Tier_Upgrade_Template_Cooper",
+    "Material: Copper",
+    "UpgradeToTier: 1",
+    "RequiredBaseBlock: hytale:wood_chest" 
+  ]
 }

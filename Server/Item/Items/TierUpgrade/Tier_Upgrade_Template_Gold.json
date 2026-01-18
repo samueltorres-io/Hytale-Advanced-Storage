@@ -11,10 +11,10 @@
       "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Gold_Texture"
     }
   ],
-  "Tags": {
-    "StorageUpgrade": "Tier_Upgrade_Template_Gold",
-    "Material": "Gold",
-    "UpgradeToTier": "4",
-    "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_silver"
-  }
+  "Tags": [
+    "StorageUpgrade: Tier_Upgrade_Template_Gold",
+    "Material: Gold",
+    "UpgradeToTier: 4",
+    "RequiredBaseBlock: advancedstorage:advanced_storage_chest_silver"
+  ]
 }

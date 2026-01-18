@@ -11,10 +11,10 @@
       "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Iron_Texture"
     }
   ],
-  "Tags": {
-    "StorageUpgrade": "Tier_Upgrade_Template_Iron",
-    "Material": "Iron",
-    "UpgradeToTier": "2",
-    "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_copper"
-  }
+  "Tags": [
+    "StorageUpgrade: Tier_Upgrade_Template_Iron",
+    "Material: Iron",
+    "UpgradeToTier: 2",
+    "RequiredBaseBlock: advancedstorage:advanced_storage_chest_copper"
+  ]
 }

@@ -11,10 +11,10 @@
       "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Thorium_Texture"
     }
   ],
-  "Tags": {
-    "StorageUpgrade": "Tier_Upgrade_Template_Thorium",
-    "Material": "Thorium",
-    "UpgradeToTier": "6",
-    "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_cobalt"
-  }
+  "Tags": [
+    "StorageUpgrade: Tier_Upgrade_Template_Thorium",
+    "Material: Thorium",
+    "UpgradeToTier: 6",
+    "RequiredBaseBlock: advancedstorage:advanced_storage_chest_cobalt"
+  ]
 }

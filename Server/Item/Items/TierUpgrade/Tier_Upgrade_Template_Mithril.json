@@ -11,10 +11,10 @@
       "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Mithril_Texture"
     }
   ],
-  "Tags": {
-    "StorageUpgrade": "Tier_Upgrade_Template_Mithril",
-    "Material": "Mithril",
-    "UpgradeToTier": "8",
-    "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_adamantite"
-  }
+  "Tags": [
+    "StorageUpgrade: Tier_Upgrade_Template_Mithril",
+    "Material: Mithril",
+    "UpgradeToTier: 8",
+    "RequiredBaseBlock: advancedstorage:advanced_storage_chest_adamantite"
+  ]
 }

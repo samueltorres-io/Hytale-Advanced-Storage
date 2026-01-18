@@ -11,10 +11,10 @@
       "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Onyxium_Texture"
     }
   ],
-  "Tags": {
-    "StorageUpgrade": "Tier_Upgrade_Template_Onyxium",
-    "Material": "Onyxium",
-    "UpgradeToTier": "9",
-    "RequiredBaseBlock": "advancedstorage:advanced_storage_chest_mithril"
-  }
+  "Tags": [
+    "StorageUpgrade: Tier_Upgrade_Template_Onyxium",
+    "Material: Onyxium",
+    "UpgradeToTier: 9",
+    "RequiredBaseBlock: advancedstorage:advanced_storage_chest_mithril"
+  ]
 }
