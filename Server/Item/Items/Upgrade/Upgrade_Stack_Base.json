@@ -1,20 +1,20 @@
 {
-    "TranslationProperties": {
-      "Name": "Stack Upgrade (Base)",
-      "Description": "Doubles the slot capacity"
-    },
-    "Icon": "advancedstorage:Icons/Items/Upgrade/Upgrade_Stack_Base",
-    "Model": "advancedstorage:Blocks/ItemsUpgrade/Upgrade_Stack_Template",
-    "Categories": ["Items.Upgrades"],
-    "CustomModelTexture": [
-      {
-        "Texture": "advancedstorage:Blocks/Items/Upgrade/Upgrade_Stack_Base_Texture"
-      }
-    ],
-    "Tags": {
-      "UpgradeType": "Stack",
-      "StackMultiplier": 2,
-      "UpgradeTier": 1,
-      "UpgradeCost": 1
+  "TranslationProperties": {
+    "Name": "Stack Upgrade (Base)",
+    "Description": "Doubles the slot capacity"
+  },
+  "Icon": "advancedstorage:Icons/Items/Upgrade/Upgrade_Stack_Base",
+  "Model": "advancedstorage:Blocks/Items/Upgrade/Upgrade_Stack_Template", 
+  "Categories": ["Items.Upgrades"],
+  "CustomModelTexture": [
+    {
+      "Texture": "advancedstorage:Blocks/Items/Upgrade/Upgrade_Stack_Base_Texture"
     }
+  ],
+  "Tags": {
+    "UpgradeType": "Stack",
+    "StackMultiplier": 2,
+    "UpgradeTier": 1,
+    "UpgradeCost": 1
+  }
 }
