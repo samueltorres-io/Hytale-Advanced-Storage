@@ -18,6 +18,12 @@ namespace AdvancedStorage.Server.Scripts
         {
             Block targetBlock = event.Block;
 
+            /* Inicialização da tag para não chegar como null */
+            if (!targetBlock.Tags.Contains("CurrentEnergy"))
+            {
+                targetBlock.Tags.Set("CurrentEnergy", "0");
+            }
+
             /* Verifica se é um baú do nosso mod */
             if (targetBlock.Tags.Contains("IsAdvancedStorage"))
             {
