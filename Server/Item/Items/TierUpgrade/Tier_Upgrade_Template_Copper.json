@@ -1,20 +1,20 @@
 {
-    "TranslationProperties": {
-      "Name": "Tier Upgrade Template Copper",
-      "Description": "Upgrades a Wooden Chest to Copper. Increases storage space to 27 slots and unlocks 1 upgrade slot"
-    },
-    "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Copper",
-    "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
-    "Categories": ["Items.Tiers_Upgrades"],
-    "CustomModelTexture": [
-      {
-        "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Copper_Texture"
-      }
-    ],
-    "Tags": {
-      "StorageUpgrade": "Tier_Upgrade_Template_Cooper",
-      "Material": "Copper",
-      "UpgradeToTier": "1",
-      "RequiredBaseBlock": "hytale:wood_chest"
+  "TranslationProperties": {
+    "Name": "Tier Upgrade: Copper",
+    "Description": "Upgrades a Wooden Chest to Copper. Adds slots and upgrade capability."
+  },
+  "Icon": "advancedstorage:Icons/Items/TierUpgrade/Tier_Upgrade_Template_Copper",
+  "Model": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template",
+  "Categories": ["Items.Tiers_Upgrades"],
+  "CustomModelTexture": [
+    {
+      "Texture": "advancedstorage:Blocks/Items/TierUpgrade/Tier_Upgrade_Template_Copper_Texture"
     }
+  ],
+  "Tags": {
+    "StorageUpgrade": "Tier_Upgrade_Template_Cooper",
+    "Material": "Copper",
+    "UpgradeToTier": "1",
+    "RequiredBaseBlock": "hytale:wood_chest" 
+  }
 }
